@@ -1,0 +1,91 @@
+.newsletter {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: "Montserrat";
+}
+
+.newsletter__inner {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.newsletter__partners-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.newsletter__partner {
+  align-self: center;
+}
+
+.newsletter__form {
+  display: flex;
+  align-items: center;
+  gap: clamp(16px, 15%, 240px);
+  background: linear-gradient(90deg, #004788 0%, #d71489 100%);
+  padding: 30px 50px;
+  margin-bottom: 20px;
+}
+
+.newsletter__form-title {
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+}
+
+.newsletter__form-input {
+  outline: none;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+
+.newsletter__form-label {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  height: 58px;
+  width: 450px;
+  border: 1px solid #e6e6e6;
+  flex-shrink: 0;
+}
+
+.newsletter__form-button {
+  background-color: #23a6f0;
+  border: none;
+  border-left: 1px solid #e6e6e6;
+  color: white;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+@media (max-width: 760px) {
+  .newsletter__partners-list {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-row-gap: 60px;
+  }
+  .newsletter__partner {
+    justify-self: center;
+  }
+
+  .newsletter__form {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .newsletter__form-title {
+    text-align: center;
+  }
+
+  .newsletter__form-label {
+    width: auto;
+  }
+}
