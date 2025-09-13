@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.pricing {
+  width: 100%;
+  max-width: 1440px;
+  font-family: "Montserrat";
+  margin: 0 auto;
+}
+
+.pricing__title {
+  margin-bottom: 10px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.pricing__text {
+  margin-bottom: 80px;
+  color: #737373;
+  padding: 0 clamp(10px, 20%, 210px);
+}
+
+.pricing__inner {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 100px 32px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.pricing__cards {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 40px;
+  border: 1px solid #23a6f0;
+  border-radius: 10px;
+  flex: 0 1 327px;
+  gap: 35px;
+  transition: 0.2s;
+  transform-origin: bottom center;
+}
+
+.card:hover {
+  background-color: #252b42;
+  color: white;
+  transform: scale(1.05);
+}
+
+.card:hover > p {
+  color: white;
+}
+
+.card__title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card__text {
+  color: #737373;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.card__price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card__price-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  color: #23a6f0;
+}
+
+.card__price-info > p {
+  margin: 0;
+}
+
+.card__value {
+  font-size: 40px;
+  color: #23a6f0;
+}
+
+.card__currency {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.card__benefits-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card__benefits-list:last-child {
+  text-align: start;
+}
+
+.card__benefit {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card__benefit > p {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.card__button {
+  background-color: #23a6f0;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 40px;
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  .pricing__cards {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
