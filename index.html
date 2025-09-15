@@ -11,6 +11,9 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./newsletter.css" />
+    <link rel="stylesheet" href="./reviews.css" />
+    <link rel="stylesheet" href="./benefits.css" />
+    <link rel="stylesheet" href="./header.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,7 +25,376 @@
     <title>Insurance service</title>
   </head>
   <body>
-    <section class="newsletter" aria-labelledby="newsletter-subscription">
+    <div class="container">
+      <input type="checkbox" id="burger" class="header__burger-toggle" />
+      <header class="header">
+        <nav class="header__navigation">
+          <p class="header__logo"><a href="/">BrandName</a></p>
+
+          <ul class="navigation__list">
+            <li>
+              <a href="#" class="header__link">Home</a>
+            </li>
+            <li>
+              <a href="#" class="header__link">Product</a>
+            </li>
+            <li>
+              <a href="#" class="header__link">Pricing</a>
+            </li>
+            <li>
+              <a href="#" class="header__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="header__navigation-icons">
+          <img
+            src="./images/search.svg"
+            alt="search"
+            loading="lazy"
+            decoding="async"
+          />
+          <img
+            src="./images/shopping-cart.svg"
+            alt="shopping-cart"
+            loading="lazy"
+            decoding="async"
+          />
+          <label for="burger" aria-label="menu" aria-controls="mobile-nav">
+            <img
+              src="./images/menu.svg"
+              alt="menu"
+              loading="lazy"
+              decoding="async"
+            />
+          </label>
+        </nav>
+
+        <div class="header__user-interaction">
+          <button class="header__button header__button--login" type="button">
+            Login
+          </button>
+          <button class="header__button header__button--member" type="button">
+            Become a member
+          </button>
+        </div>
+      </header>
+      <nav id="mobile-nav" class="mobile-navigation" aria-label="Mobile">
+        <ul class="mobile-navigation__list">
+          <li>
+            <a href="#" class="mobile-navigation__link">Home</a>
+          </li>
+          <li>
+            <a href="#" class="mobile-navigation__link">Product</a>
+          </li>
+          <li>
+            <a href="#" class="mobile-navigation__link">Pricing</a>
+          </li>
+          <li>
+            <a href="#" class="mobile-navigation__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="info">
+        <div class="info__about">
+          <h1 class="about__title">We Ensure A Best Insurance Service</h1>
+          <p>
+            We know how large objects will act, but things on a small scale just
+            do not act that way.
+          </p>
+          <div class="info__interaction">
+            <button class="info__button info__button--get-quote">
+              Get Quote Now
+            </button>
+            <button class="info__button info__button--learn-more">
+              Learn More
+            </button>
+          </div>
+        </div>
+        <ul class="info__advantages">
+          <li class="advantage">
+            <img
+              src="./images/people-smaller.svg"
+              alt="people-icon"
+              loading="lazy"
+              decoding="async"
+            />
+            <h3 class="advantage__title">Peace of mind</h3>
+            <p class="advantage__text">the quick fox jumps over the lazy dog</p>
+          </li>
+          <li class="advantage">
+            <img
+              src="./images/people-smaller.svg"
+              alt="people-icon"
+              loading="lazy"
+              decoding="async"
+            />
+            <h3 class="advantage__title">Set for life</h3>
+            <p class="advantage__text">the quick fox jumps over the lazy dog</p>
+          </li>
+          <li class="advantage advantage--blue">
+            <img
+              src="./images/people-white-bg.svg"
+              alt="people-icon"
+              loading="lazy"
+              decoding="async"
+            />
+            <h3 class="advantage__title">100% Satisfaction</h3>
+            <p class="advantage__text">the quick fox jumps over the lazy dog</p>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <article class="benefits" aria-label="list of benefits">
+      <ul class="benefits__inner">
+        <li class="benefit">
+          <img
+            src="./images/book.svg"
+            alt=""
+            class="benefit__image"
+            loading="lazy"
+          />
+          <h3 class="benefit__title">Peace of Mind</h3>
+          <p class="benefit__text">
+            So it really behaves like neither. Now we have given up.
+          </p>
+        </li>
+        <li class="benefit">
+          <img
+            src="./images/favourites.svg"
+            alt=""
+            class="benefit__image"
+            loading="lazy"
+          />
+          <h5 class="benefit__title">Set For Life</h5>
+          <p class="benefit__text">
+            They were used to create the machines that launched
+          </p>
+        </li>
+        <li class="benefit">
+          <img
+            src="./images/people-bigger.svg"
+            alt=""
+            class="benefit__image"
+            loading="lazy"
+          />
+          <h5 class="benefit__title">100% Satisfaction</h5>
+          <p class="benefit__text">
+            So it really behaves like neither. Now we have given up.
+          </p>
+        </li>
+      </ul>
+    </article>
+    <section class="reviews" aria-labelledby="reviews">
+      <header class="reviews__header">
+        <h2 class="reviews__title visually-hidden" id="reviews">Industry</h2>
+        <p>
+          Problems trying to resolve the conflict between the two major realms
+          of Classical physics: Newtonian mechanics
+        </p>
+      </header>
+
+      <div class="reviews__inner">
+        <div class="review">
+          <img
+            src="./images/user-1.png"
+            alt="customer avatar"
+            class="review__person"
+            loading="lazy"
+            decoding="async"
+          />
+          <p class="review__text">
+            Slate helps you see how many more days you need to work to reach
+            your financial goal for the month and year.
+          </p>
+          <div class="review__stars">
+            <ul
+              class="review__stars-list"
+              role="img"
+              aria-label="4 out of 5 stars"
+            >
+              <li>
+                <img
+                  src="./images/star-filled.svg"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  aria-hidden="true"
+                />
+              </li>
+              <li>
+                <img
+                  src="./images/star-filled.svg"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  aria-hidden="true"
+                />
+              </li>
+              <li>
+                <img
+                  src="./images/star-filled.svg"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  aria-hidden="true"
+                />
+              </li>
+              <li>
+                <img
+                  src="./images/star-filled.svg"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  aria-hidden="true"
+                />
+              </li>
+              <li>
+                <img
+                  src="./images/star.svg"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  aria-hidden="true"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="review">
+          <img
+            src="./images/user-2.png"
+            alt="customer avatar"
+            class="review__person"
+            loading="lazy"
+            decoding="async"
+          />
+          <p class="review__text">
+            Slate helps you see how many more days you need to work to reach
+            your financial goal for the month and year.
+          </p>
+          <div class="review__stars">
+            <ul
+              class="review__stars-list"
+              role="img"
+              aria-label="4 out of 5 stars"
+            >
+              <li>
+                <img
+                  src="./images/star-filled.svg"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  aria-hidden="true"
+                />
+              </li>
+              <li>
+                <img
+                  src="./images/star-filled.svg"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  aria-hidden="true"
+                />
+              </li>
+              <li>
+                <img
+                  src="./images/star-filled.svg"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  aria-hidden="true"
+                />
+              </li>
+              <li>
+                <img
+                  src="./images/star-filled.svg"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  aria-hidden="true"
+                />
+              </li>
+              <li>
+                <img
+                  src="./images/star.svg"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  aria-hidden="true"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="review">
+          <img
+            src="./images/user-3.png"
+            alt="customer avatar"
+            class="review__person"
+            loading="lazy"
+            decoding="async"
+          />
+          <p class="review__text">
+            Slate helps you see how many more days you need to work to reach
+            your financial goal for the month and year.
+          </p>
+          <div class="review__stars">
+            <ul
+              class="review__stars-list"
+              role="img"
+              aria-label="4 out of 5 stars"
+            >
+              <li>
+                <img
+                  src="./images/star-filled.svg"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  aria-hidden="true"
+                />
+              </li>
+              <li>
+                <img
+                  src="./images/star-filled.svg"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  aria-hidden="true"
+                />
+              </li>
+              <li>
+                <img
+                  src="./images/star-filled.svg"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  aria-hidden="true"
+                />
+              </li>
+              <li>
+                <img
+                  src="./images/star-filled.svg"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  aria-hidden="true"
+                />
+              </li>
+              <li>
+                <img
+                  src="./images/star.svg"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  aria-hidden="true"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+  <section class="newsletter" aria-labelledby="newsletter-subscription">
       <div class="newsletter__inner">
         <div class="newsletter__partners">
           <ul class="newsletter__partners-list">
