@@ -2,7 +2,7 @@
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  background-image: url("./images/background\ \(3\).png");
+  background-image: url("./images/background.png");
   background-repeat: no-repeat;
   background-position: top;
   background-size: contain;
@@ -54,6 +54,14 @@
   font-size: 14px;
 }
 
+.header__link:focus-visible,
+.header__button:focus-visible,
+.mobile-navigation__link:focus-visible {
+  outline: 2px solid #23a6f0;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
 .header__user-interaction {
   display: flex;
   gap: 40px;
@@ -63,6 +71,7 @@
   color: inherit;
   border: none;
   font-size: 14px;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .header__button:hover {
@@ -79,6 +88,11 @@
   height: 52px;
   background-color: #23a6f0;
   border-radius: 5px;
+}
+
+.header__button--member:hover,
+.header__button--member:focus-visible {
+  filter: brightness(1.05);
 }
 
 .header__button--member::after {
@@ -135,6 +149,11 @@
   font-weight: bold;
 }
 
+.info__button--get-quote:hover,
+.info__button--get-quote:focus-visible {
+  filter: brightness(1.05);
+}
+
 .info__button--learn-more {
   background-color: transparent;
   border: 1px solid white;
@@ -188,7 +207,6 @@
 
 .mobile-navigation {
   width: 100%;
-  display: flex;
   justify-content: center;
   background-color: white;
   display: none;
@@ -218,6 +236,7 @@
 
   .header {
     flex-direction: column;
+    gap: 16px;
   }
 }
 
@@ -230,6 +249,8 @@
   .header {
     background-color: white;
     color: black;
+    flex-direction: row;
+    justify-content: space-around;
   }
 
   .header__user-interaction {
@@ -239,11 +260,16 @@
   .info__advantages {
     flex-direction: column;
     align-items: center;
+    list-style: none;
   }
 
   .info__interaction {
     flex-direction: column;
     gap: 25px;
+  }
+
+  .info__button {
+    min-height: 48px;
   }
 
   .about__title {
@@ -261,12 +287,19 @@
   }
 
   .header__burger-toggle:checked ~ .mobile-navigation {
-    display: block;
+    display: flex;
   }
 
   .header__navigation {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header__button,
+  .info__button,
+  .mobile-navigation {
+    transition: none !important;
   }
 }
