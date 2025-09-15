@@ -10,7 +10,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <link rel="stylesheet" href="./benefits.css" />
+
+    <link rel="stylesheet" href="./header.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,6 +26,7 @@
     <title>Insurance service</title>
   </head>
   <body>
+
     <article class="benefits" aria-label="list of benefits">
       <ul class="benefits__inner">
         <li class="benefit">
@@ -62,5 +67,127 @@
         </li>
       </ul>
     </article>
+
+    <div class="container">
+      <input type="checkbox" id="burger" class="header__burger-toggle" />
+      <header class="header">
+        <nav class="header__navigation">
+          <p class="header__logo"><a href="/">BrandName</a></p>
+
+          <ul class="navigation__list">
+            <li>
+              <a href="#" class="header__link">Home</a>
+            </li>
+            <li>
+              <a href="#" class="header__link">Product</a>
+            </li>
+            <li>
+              <a href="#" class="header__link">Pricing</a>
+            </li>
+            <li>
+              <a href="#" class="header__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="header__navigation-icons">
+          <img
+            src="./images/search.svg"
+            alt="search"
+            loading="lazy"
+            decoding="async"
+          />
+          <img
+            src="./images/shopping-cart.svg"
+            alt="shopping-cart"
+            loading="lazy"
+            decoding="async"
+          />
+          <label for="burger" aria-label="menu" aria-controls="mobile-nav">
+            <img
+              src="./images/menu.svg"
+              alt="menu"
+              loading="lazy"
+              decoding="async"
+            />
+          </label>
+        </nav>
+
+        <div class="header__user-interaction">
+          <button class="header__button header__button--login" type="button">
+            Login
+          </button>
+          <button class="header__button header__button--member" type="button">
+            Become a member
+          </button>
+        </div>
+      </header>
+      <nav id="mobile-nav" class="mobile-navigation" aria-label="Mobile">
+        <ul class="mobile-navigation__list">
+          <li>
+            <a href="#" class="mobile-navigation__link">Home</a>
+          </li>
+          <li>
+            <a href="#" class="mobile-navigation__link">Product</a>
+          </li>
+          <li>
+            <a href="#" class="mobile-navigation__link">Pricing</a>
+          </li>
+          <li>
+            <a href="#" class="mobile-navigation__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="info">
+        <div class="info__about">
+          <h1 class="about__title">We Ensure A Best Insurance Service</h1>
+          <p>
+            We know how large objects will act, but things on a small scale just
+            do not act that way.
+          </p>
+          <div class="info__interaction">
+            <button class="info__button info__button--get-quote">
+              Get Quote Now
+            </button>
+            <button class="info__button info__button--learn-more">
+              Learn More
+            </button>
+          </div>
+        </div>
+        <ul class="info__advantages">
+          <li class="advantage">
+            <img
+              src="./images/people.svg"
+              alt="people-icon"
+              loading="lazy"
+              decoding="async"
+            />
+            <h3 class="advantage__title">Peace of mind</h3>
+            <p class="advantage__text">the quick fox jumps over the lazy dog</p>
+          </li>
+          <li class="advantage">
+            <img
+              src="./images/people.svg"
+              alt="people-icon"
+              loading="lazy"
+              decoding="async"
+            />
+            <h3 class="advantage__title">Set for life</h3>
+            <p class="advantage__text">the quick fox jumps over the lazy dog</p>
+          </li>
+          <li class="advantage advantage--blue">
+            <img
+              src="./images/people-white-bg.svg"
+              alt="people-icon"
+              loading="lazy"
+              decoding="async"
+            />
+            <h3 class="advantage__title">100% Satisfaction</h3>
+            <p class="advantage__text">the quick fox jumps over the lazy dog</p>
+          </li>
+        </ul>
+      </section>
+    </div>
+
   </body>
 </html>
