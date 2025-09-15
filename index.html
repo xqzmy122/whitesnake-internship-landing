@@ -22,7 +22,7 @@
     <title>Insurance service</title>
   </head>
   <body>
-    <section class="newsletter">
+    <section class="newsletter" aria-labelledby="newsletter-subscription">
       <div class="newsletter__inner">
         <div class="newsletter__partners">
           <ul class="newsletter__partners-list">
@@ -30,7 +30,7 @@
               <a href="#">
                 <img
                   src="./images/hooli.svg"
-                  alt="company"
+                  alt="hooli's company icon"
                   loading="lazy"
                   decoding="async"
                 />
@@ -38,51 +38,84 @@
             </li>
             <li class="newsletter__partner">
               <a href="#">
-                <img src="/images/lyft.svg" alt="company" />
+                <img
+                  src="./images/lyft.svg"
+                  alt="lyft's company icon"
+                  loading="lazy"
+                  decoding="async"
+                />
               </a>
             </li>
             <li class="newsletter__partner">
               <a href="#">
-                <img src="./images/leaflet.svg" alt="company" />
+                <img
+                  src="./images/leaflet.svg"
+                  alt="leaflet's company icon"
+                  loading="lazy"
+                  decoding="async"
+                />
               </a>
             </li>
             <li class="newsletter__partner">
               <a href="#">
-                <img src="./images/stripe.svg" alt="company" />
+                <img
+                  src="./images/stripe.svg"
+                  alt="stripe's company icon"
+                  loading="lazy"
+                  decoding="async"
+                />
               </a>
             </li>
             <li class="newsletter__partner">
               <a href="#">
-                <img src="./images/aws.svg" alt="company" />
+                <img
+                  src="./images/aws.svg"
+                  alt="aws's company icon"
+                  loading="lazy"
+                  decoding="async"
+                />
               </a>
             </li>
             <li class="newsletter__partner">
               <a href="#">
-                <img src="./images/reddit.svg" alt="company" />
+                <img
+                  src="./images/reddit.svg"
+                  alt="reddit's company icon"
+                  loading="lazy"
+                  decoding="async"
+                />
               </a>
             </li>
           </ul>
         </div>
         <form
-          action="https://exapmle.com"
+          action="https://example.com"
           method="post"
           class="newsletter__form"
         >
-          <h3 class="newsletter__form-title">
+          <h3 class="newsletter__form-title" id="newsletter-subscription">
             Subscribe For Latest Newsletter
           </h3>
-          <label for="email" class="newsletter__form-label">
-            <input
-              type="email"
-              id="email"
-              autocomplete="off"
-              class="newsletter__form-input"
-              placeholder="Your email"
-            />
+          <div class="newsletter__form-data">
+            <label
+              for="email"
+              class="newsletter__form-label"
+              aria-label="Email address"
+            >
+              <input
+                type="email"
+                id="email"
+                autocomplete="email"
+                class="newsletter__form-input"
+                placeholder="Your email"
+                name="email"
+                required
+              />
+            </label>
             <button class="newsletter__form-button" type="submit">
               Subscribe
             </button>
-          </label>
+          </div>
         </form>
       </div>
     </section>
