@@ -12,8 +12,9 @@
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 30px;
-  padding: 100px 0;
+  gap: 30px;
+  padding: clamp(60px, 8vw, 100px) 0;
+  list-style: none;
 }
 
 .benefit {
@@ -23,13 +24,14 @@
 
 .benefit__title {
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 700;
   margin: 30px 0 10px 0;
 }
 
 .benefit__text {
   font-size: 14px;
   color: #737373;
+  line-height: 20px;
 }
 
 @media (max-width: 760px) {
@@ -40,6 +42,7 @@
 
   .benefit {
     justify-self: center;
-    width: 329px;
+    width: 100%;
+    max-width: 329px;
   }
 }
