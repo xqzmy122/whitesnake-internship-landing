@@ -1,75 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./form.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap"
+      rel="preload"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <meta name="keywords" content="insurance, health" />
+    <meta name="description" content="Landing page for insurance service" />
+    <title>Insurance service</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
-    integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./form.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap"
-    rel="stylesheet" />
-  <meta name="keywords" content="insurance, health" />
-  <meta name="description" content="Landing page for insurance service" />
-  <title>Insurance service</title>
-</head>
-
-<body>
-  <section class="booking">
-    <div class="booking__inner">
-      <div class="booking__info">
-        <div class="booking__text">
-          <h2>We Have Branches All
-            Over The World</h2>
-          <p>The gradual accumulation of information about atomic and
-            small-scale behaviour during the first quarter of the 20th
-            century, which gave some indications about how small things
-            do behave, produced an increasing confusion which was
-            Heisenberg, and Born.</p>
+  <body>
+    <section class="booking" aria-labelledby="booking__title">
+      <div class="booking__inner">
+        <div class="booking__info">
+          <div class="booking__text">
+            <h2 class="booking__title" id="booking__title">
+              We Have Branches All Over The World
+            </h2>
+            <p>
+              The gradual accumulation of information about atomic and
+              small-scale behaviour during the first quarter of the 20th
+              century, which gave some indications about how small things do
+              behave, produced an increasing confusion which was Heisenberg, and
+              Born.
+            </p>
+          </div>
+          <picture>
+            <source srcset="./images/world.webp" type="image/webp" />
+            <img
+              src="./images/world.png"
+              alt="Branches all over the world"
+              loading="lazy"
+              decoding="async"
+              class="booking__world-image"
+            />
+          </picture>
         </div>
-        <img src="./images/world.webp" alt="world" loading="lazy" decoding="async">
-      </div>
-      <div class="booking__contact">
-        <div class="booking__family-image">
-
+        <div class="booking__contact">
+          <div class="booking__family-image" aria-hidden="true"></div>
+          <form
+            action="https://example.com"
+            method="post"
+            class="booking__form"
+            aria-labelledby="appointment"
+          >
+            <h3 class="booking__form-title" id="appointment">
+              Book Appointment
+            </h3>
+            <div class="booking__form-data">
+              <label for="name" class="booking__form-label">Name *</label>
+              <input
+                type="text"
+                placeholder="Full Name *"
+                name="name"
+                id="name"
+                maxlength="25"
+                pattern="[\p{L}\s]+"
+                title="Username should be without numbers or spaces"
+                required
+                class="booking__form-input"
+                aria-describedby="name"
+              />
+              <span id="name" hidden
+                >Username should be without numbers or spaces</span
+              >
+            </div>
+            <div class="booking__form-data">
+              <label for="email" class="booking__form-label"
+                >Email address *</label
+              >
+              <input
+                type="email"
+                placeholder="example@gmail.com"
+                name="email"
+                id="email"
+                maxlength="100"
+                required
+                class="booking__form-input"
+                aria-describedby="email"
+              />
+              <span id="email" hidden>Enter your email address</span>
+            </div>
+            <div class="booking__form-data">
+              <label for="department" class="booking__form-label"
+                >Department *</label
+              >
+              <select name="department" id="department" required>
+                <option value="" disabled selected>Please Select</option>
+                <option value="Medicine">Medicine</option>
+                <option value="Education">Education</option>
+              </select>
+            </div>
+            <div class="booking__form-data">
+              <label for="time" class="booking__form-label">Time *</label>
+              <select name="time" id="time" required>
+                <option value="" disabled selected>4:00 Available</option>
+                <option value="6:00">6:00</option>
+              </select>
+            </div>
+            <button
+              class="booking__form-submit-button"
+              type="submit"
+              aria-label="Submit form"
+              name="submitFormButton"
+              value="sendInfo"
+            >
+              Book Appointment
+            </button>
+          </form>
         </div>
-        <form action="https://example.com" method="post" class="booking__form">
-          <h3 class="booking__form-title">Book Appointment</h3>
-          <div class="booking__form-data">
-            <label for="name" class="booking__form-label">Name *</label>
-            <input type="text" placeholder="Full Name *" name="name" id="name" maxlength="20" pattern="[A-Za-z]{2,20}"
-              title="Username should be without numbers or spaces" required class="booking__form-input">
-          </div>
-          <div class="booking__form-data">
-            <label for="email" class="booking__form-label">Email address *</label>
-            <input type="email" placeholder="example@gmail.com" name="email" id="email" maxlength="100" required
-              class="booking__form-input">
-          </div>
-          <div class="booking__form-data">
-            <label for="department" class="booking__form-label">Department *</label>
-            <select name="department" id="department" required>
-              <option value="" disabled selected>Please Select</option>
-              <option value="Medicine">Medicine</option>
-              <option value="Education">Education</option>
-            </select>
-          </div>
-          <div class="booking__form-data">
-            <label for="time" class="booking__form-label">Time *</label>
-            <select name="time" id="time" required>
-              <option value="" disabled selected>4:00 Available</option>
-              <option value="6:00">6:00</option>
-            </select>
-          </div>
-          <button class="booking__form-submit-button" type="submit" aria-label="Submit form">Book Appointment</button>
-        </form>
       </div>
-
-    </div>
-  </section>
-</body>
-
+    </section>
+  </body>
 </html>
