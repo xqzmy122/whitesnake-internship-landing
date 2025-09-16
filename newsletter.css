@@ -1,0 +1,131 @@
+.newsletter {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: "Montserrat";
+}
+
+.newsletter__inner {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.newsletter__partners-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px;
+  padding: 0;
+}
+
+.newsletter__partner {
+  align-self: center;
+  justify-self: center;
+}
+
+.newsletter__partner:hover img {
+  filter: grayscale(1);
+  /* Ничего не меняет? */
+}
+
+.newsletter__partner img {
+  max-width: 100%;
+}
+
+.newsletter__form {
+  display: flex;
+  align-items: center;
+  gap: clamp(16px, 15%, 240px);
+  background: linear-gradient(90deg, #004788 0%, #d71489 100%);
+  padding: 30px clamp(5px, 2vw, 50px);
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.newsletter__form-data {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 450px;
+}
+
+.newsletter__form-title {
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+}
+
+.newsletter__form-input {
+  outline: none;
+  border: none;
+  padding: 15px 20px;
+  display: flex;
+  width: 100%;
+  min-width: 0;
+}
+
+.newsletter__form-label {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  height: 58px;
+  padding: 10px;
+  border: 1px solid #e6e6e6;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  max-width: 100%;
+}
+
+.newsletter__form-button {
+  background-color: #23a6f0;
+  border: 1px solid #e6e6e6;
+  border-left: none;
+  color: white;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 58px;
+  flex: 0 0 117px;
+  padding: 15px 22.5px;
+  transition: 0.2s;
+}
+
+.newsletter__form-button:hover {
+  filter: brightness(1.05);
+  cursor: pointer;
+}
+
+.newsletter__form:focus-within,
+.newsletter__form-button:focus-visible {
+  outline: 2px solid #23a6f0;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+@media (max-width: 760px) {
+  .newsletter__partners-list {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-row-gap: 60px;
+  }
+  .newsletter__partner {
+    justify-self: center;
+  }
+
+  .newsletter__form {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .newsletter__form-title {
+    text-align: center;
+  }
+
+  .newsletter__form-label {
+    width: auto;
+  }
+}
