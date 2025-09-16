@@ -67,7 +67,7 @@
 }
 
 .booking__family-image {
-  background: url("./images/family.webp");
+  background: url("./images/family-2.webp");
   background-repeat: no-repeat;
   background-position: 75% center;
   background-size: cover;
@@ -125,8 +125,8 @@
   border-radius: var(--border-radius-sm);
 }
 
-.booking__form-data > select:invalid,
-.booking__form-input:invalid {
+.booking__form-data > select:focus:invalid,
+.booking__form-input:focus:invalid {
   outline: 2px solid rgb(255, 62, 62);
   outline-offset: 3px;
   border-radius: var(--border-radius-sm);
