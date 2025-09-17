@@ -1,13 +1,13 @@
 .container {
   width: 100%;
-  max-width: 1440px;
+  max-width: var(--max-width-main);
   margin: 0 auto;
   background-image: url("./images/background.png");
   background-repeat: no-repeat;
   background-position: top;
   background-size: contain;
   font-family: "Montserrat";
-  color: white;
+  color: var(--color-white);
   min-height: 975px;
   background-color: #fafafa;
 }
@@ -29,6 +29,7 @@
 .header__navigation {
   display: flex;
   align-items: center;
+  gap: 40px;
 }
 
 .header__navigation-icons {
@@ -38,7 +39,7 @@
 .header__logo > a {
   text-decoration: none;
   color: inherit;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
@@ -51,13 +52,17 @@
 .header__link {
   text-decoration: none;
   color: inherit;
-  font-size: 14px;
+  font-size: 0.875rem;
+}
+
+.header__link:hover {
+  text-decoration: underline;
 }
 
 .header__link:focus-visible,
 .header__button:focus-visible,
 .mobile-navigation__link:focus-visible {
-  outline: 2px solid #23a6f0;
+  outline: 2px solid var(--accent-color);
   outline-offset: 3px;
   border-radius: 4px;
 }
@@ -70,7 +75,7 @@
 .header__button {
   color: inherit;
   border: none;
-  font-size: 14px;
+  font-size: 0.875rem;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -86,7 +91,7 @@
   text-align: center;
   width: 220px;
   height: 52px;
-  background-color: #23a6f0;
+  background-color: var(--accent-color);
   border-radius: 5px;
 }
 
@@ -109,22 +114,23 @@
 .info__about {
   width: 100%;
   max-width: 700px;
-  margin: 80px auto;
-  padding: 30px;
+  margin: clamp(80px, 30vh, 100px) auto;
+  padding: 40px 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 40px;
 }
 
 .info__about > h1 {
-  font-size: 56px;
+  font-size: 3.625rem;
   text-align: center;
 }
 
 .info__about > p {
-  font-size: 20px;
+  font-size: 1.25rem;
   text-align: center;
-  margin: 40px 80px;
+  padding: 0 clamp(10px, 5vw, 80px);
 }
 
 .info__interaction {
@@ -137,7 +143,7 @@
   border-radius: 37px;
   padding: 15px 36px;
   color: inherit;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .info__button:hover {
@@ -145,7 +151,7 @@
 }
 
 .info__button--get-quote {
-  background-color: #23a6f0;
+  background-color: var(--accent-color);
   font-weight: bold;
 }
 
@@ -156,7 +162,7 @@
 
 .info__button--learn-more {
   background-color: transparent;
-  border: 1px solid white;
+  border: 1px solid var(--color-white);
 }
 
 .info__advantages {
@@ -170,7 +176,7 @@
   padding: 35px 70px 35px 40px;
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: var(--bg-white);
   box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
   color: black;
 }
@@ -180,7 +186,8 @@
 }
 
 .advantage__text {
-  color: #737373;
+  color: var(--p-secondary);
+  line-height: 20px;
 }
 
 .advantage > img {
@@ -197,18 +204,18 @@
 }
 
 .advantage--blue {
-  background-color: #23a6f0;
-  color: white;
+  background-color: var(--accent-color);
+  color: var(--color-white);
 }
 
 .advantage--blue > p {
-  color: white;
+  color: var(--color-white);
 }
 
 .mobile-navigation {
   width: 100%;
   justify-content: center;
-  background-color: white;
+  background-color: var(--bg-white);
   display: none;
   padding: 83px 0 100px 0;
 }
@@ -224,9 +231,9 @@
 }
 
 .mobile-navigation__link {
-  color: #737373;
+  color: var(--p-secondary);
   text-decoration: none;
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 
 @media (max-width: 1100px) {
@@ -247,7 +254,7 @@
   }
 
   .header {
-    background-color: white;
+    background-color: var(--bg-white);
     color: black;
     flex-direction: row;
     justify-content: space-around;
@@ -256,11 +263,23 @@
   .header__user-interaction {
     display: none;
   }
-
+  
   .info__advantages {
     flex-direction: column;
     align-items: center;
     list-style: none;
+  }
+
+  .info__about {
+    margin: 0;
+  }
+  
+  .info__about > h1 {
+    font-size: 2.5rem;
+  }
+
+  .info__advantages {
+    padding: 80px 0;
   }
 
   .info__interaction {
@@ -273,7 +292,7 @@
   }
 
   .about__title {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 
   .header__navigation-icons {
@@ -301,5 +320,20 @@
   .info__button,
   .mobile-navigation {
     transition: none !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 100%;
+    background-size: cover;
+  }
+
+  .header {
+    max-width: 100%;
+  }
+
+  .info__about {
+    max-width: 1000px;
   }
 }

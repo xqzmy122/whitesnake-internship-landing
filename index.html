@@ -1,980 +1,599 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
-      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./newsletter.css" />
-    <link rel="stylesheet" href="./reviews.css" />
-    <link rel="stylesheet" href="./benefits.css" />
-    <link rel="stylesheet" href="./header.css" />
-    <link rel="stylesheet" href="./pricing.css" />
-    <link rel="stylesheet" href="./footer.css" />
-    <link rel="stylesheet" href="./form.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap"
-      rel="stylesheet"
-    />
-    <meta name="keywords" content="insurance, health" />
-    <meta name="description" content="Landing page for insurance service" />
-    <title>Insurance service</title>
-  </head>
 
-  <body>
-    <div class="container">
-      <input type="checkbox" id="burger" class="header__burger-toggle" />
-      <header class="header">
-        <nav class="header__navigation">
-          <p class="header__logo"><a href="/">BrandName</a></p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./newsletter.css" />
+  <link rel="stylesheet" href="./reviews.css" />
+  <link rel="stylesheet" href="./benefits.css" />
+  <link rel="stylesheet" href="./header.css" />
+  <link rel="stylesheet" href="./pricing.css" />
+  <link rel="stylesheet" href="./footer.css" />
+  <link rel="stylesheet" href="./form.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap"
+    rel="stylesheet" />
+  <meta name="keywords" content="insurance, health" />
+  <meta name="description" content="Landing page for insurance service" />
+  <title>Insurance service</title>
+</head>
 
-          <ul class="navigation__list">
-            <li>
-              <a href="#" class="header__link">Home</a>
-            </li>
-            <li>
-              <a href="#" class="header__link">Product</a>
-            </li>
-            <li>
-              <a href="#" class="header__link">Pricing</a>
-            </li>
-            <li>
-              <a href="#" class="header__link">Contact</a>
-            </li>
-          </ul>
-        </nav>
-        <nav class="header__navigation-icons">
-          <img
-            src="./images/search.svg"
-            alt="search"
-            loading="lazy"
-            decoding="async"
-          />
-          <img
-            src="./images/shopping-cart.svg"
-            alt="shopping-cart"
-            loading="lazy"
-            decoding="async"
-          />
-          <label for="burger" aria-label="menu" aria-controls="mobile-nav">
-            <img
-              src="./images/menu.svg"
-              alt="menu"
-              loading="lazy"
-              decoding="async"
-            />
-          </label>
-        </nav>
+<body>
+  <div class="container">
+    <input type="checkbox" id="burger" class="header__burger-toggle" />
+    <header class="header">
+      <nav class="header__navigation">
+        <p class="header__logo"><a href="/">BrandName</a></p>
 
-        <div class="header__user-interaction">
-          <button class="header__button header__button--login" type="button">
-            Login
-          </button>
-          <button class="header__button header__button--member" type="button">
-            Become a member
-          </button>
-        </div>
-      </header>
-      <nav id="mobile-nav" class="mobile-navigation" aria-label="Mobile">
-        <ul class="mobile-navigation__list">
+        <ul class="navigation__list">
           <li>
-            <a href="#" class="mobile-navigation__link">Home</a>
+            <a href="#" class="header__link">Home</a>
           </li>
           <li>
-            <a href="#" class="mobile-navigation__link">Product</a>
+            <a href="#" class="header__link">Product</a>
           </li>
           <li>
-            <a href="#" class="mobile-navigation__link">Pricing</a>
+            <a href="#" class="header__link">Pricing</a>
           </li>
           <li>
-            <a href="#" class="mobile-navigation__link">Contact</a>
+            <a href="#" class="header__link">Contact</a>
           </li>
         </ul>
       </nav>
+      <nav class="header__navigation-icons">
+        <img src="./images/search.svg" alt="search" loading="lazy" decoding="async" />
+        <img src="./images/shopping-cart.svg" alt="shopping-cart" loading="lazy" decoding="async" />
+        <label for="burger" aria-label="menu" aria-controls="mobile-nav">
+          <img src="./images/menu.svg" alt="menu" loading="lazy" decoding="async" />
+        </label>
+      </nav>
 
-      <section class="info">
-        <div class="info__about">
-          <h1 class="about__title">We Ensure A Best Insurance Service</h1>
-          <p>
-            We know how large objects will act, but things on a small scale just
-            do not act that way.
-          </p>
-          <div class="info__interaction">
-            <button class="info__button info__button--get-quote">
-              Get Quote Now
-            </button>
-            <button class="info__button info__button--learn-more">
-              Learn More
-            </button>
-          </div>
-        </div>
-        <ul class="info__advantages">
-          <li class="advantage">
-            <img
-              src="./images/people-smaller.svg"
-              alt="people-icon"
-              loading="lazy"
-              decoding="async"
-            />
-            <h3 class="advantage__title">Peace of mind</h3>
-            <p class="advantage__text">the quick fox jumps over the lazy dog</p>
-          </li>
-          <li class="advantage">
-            <img
-              src="./images/people-smaller.svg"
-              alt="people-icon"
-              loading="lazy"
-              decoding="async"
-            />
-            <h3 class="advantage__title">Set for life</h3>
-            <p class="advantage__text">the quick fox jumps over the lazy dog</p>
-          </li>
-          <li class="advantage advantage--blue">
-            <img
-              src="./images/people-white-bg.svg"
-              alt="people-icon"
-              loading="lazy"
-              decoding="async"
-            />
-            <h3 class="advantage__title">100% Satisfaction</h3>
-            <p class="advantage__text">the quick fox jumps over the lazy dog</p>
-          </li>
-        </ul>
-      </section>
-    </div>
-
-    <article class="benefits" aria-label="list of benefits">
-      <ul class="benefits__inner">
-        <li class="benefit">
-          <img
-            src="./images/book.svg"
-            alt=""
-            class="benefit__image"
-            loading="lazy"
-          />
-          <h3 class="benefit__title">Peace of Mind</h3>
-          <p class="benefit__text">
-            So it really behaves like neither. Now we have given up.
-          </p>
+      <div class="header__user-interaction">
+        <button class="header__button header__button--login" type="button">
+          Login
+        </button>
+        <button class="header__button header__button--member" type="button">
+          Become a member
+        </button>
+      </div>
+    </header>
+    <nav id="mobile-nav" class="mobile-navigation" aria-label="Mobile">
+      <ul class="mobile-navigation__list">
+        <li>
+          <a href="#" class="mobile-navigation__link">Home</a>
         </li>
-        <li class="benefit">
-          <img
-            src="./images/favourites.svg"
-            alt=""
-            class="benefit__image"
-            loading="lazy"
-          />
-          <h5 class="benefit__title">Set For Life</h5>
-          <p class="benefit__text">
-            They were used to create the machines that launched
-          </p>
+        <li>
+          <a href="#" class="mobile-navigation__link">Product</a>
         </li>
-        <li class="benefit">
-          <img
-            src="./images/people-bigger.svg"
-            alt=""
-            class="benefit__image"
-            loading="lazy"
-          />
-          <h5 class="benefit__title">100% Satisfaction</h5>
-          <p class="benefit__text">
-            So it really behaves like neither. Now we have given up.
-          </p>
+        <li>
+          <a href="#" class="mobile-navigation__link">Pricing</a>
+        </li>
+        <li>
+          <a href="#" class="mobile-navigation__link">Contact</a>
         </li>
       </ul>
-    </article>
-    <section class="reviews" aria-labelledby="reviews">
-      <header class="reviews__header">
-        <h2 class="reviews__title visually-hidden" id="reviews">Industry</h2>
-        <p>
-          Problems trying to resolve the conflict between the two major realms
-          of Classical physics: Newtonian mechanics
-        </p>
-      </header>
+    </nav>
 
-      <div class="reviews__inner">
-        <div class="review">
-          <img
-            src="./images/user-1.png"
-            alt="customer avatar"
-            class="review__person"
-            loading="lazy"
-            decoding="async"
-          />
-          <p class="review__text">
-            Slate helps you see how many more days you need to work to reach
-            your financial goal for the month and year.
-          </p>
-          <div class="review__stars">
-            <ul
-              class="review__stars-list"
-              role="img"
-              aria-label="4 out of 5 stars"
-            >
-              <li>
-                <img
-                  src="./images/star-filled.svg"
-                  alt=""
-                  loading="lazy"
-                  decoding="async"
-                  aria-hidden="true"
-                />
-              </li>
-              <li>
-                <img
-                  src="./images/star-filled.svg"
-                  alt=""
-                  loading="lazy"
-                  decoding="async"
-                  aria-hidden="true"
-                />
-              </li>
-              <li>
-                <img
-                  src="./images/star-filled.svg"
-                  alt=""
-                  loading="lazy"
-                  decoding="async"
-                  aria-hidden="true"
-                />
-              </li>
-              <li>
-                <img
-                  src="./images/star-filled.svg"
-                  alt=""
-                  loading="lazy"
-                  decoding="async"
-                  aria-hidden="true"
-                />
-              </li>
-              <li>
-                <img
-                  src="./images/star.svg"
-                  alt=""
-                  loading="lazy"
-                  decoding="async"
-                  aria-hidden="true"
-                />
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="review">
-          <img
-            src="./images/user-2.png"
-            alt="customer avatar"
-            class="review__person"
-            loading="lazy"
-            decoding="async"
-          />
-          <p class="review__text">
-            Slate helps you see how many more days you need to work to reach
-            your financial goal for the month and year.
-          </p>
-          <div class="review__stars">
-            <ul
-              class="review__stars-list"
-              role="img"
-              aria-label="4 out of 5 stars"
-            >
-              <li>
-                <img
-                  src="./images/star-filled.svg"
-                  alt=""
-                  loading="lazy"
-                  decoding="async"
-                  aria-hidden="true"
-                />
-              </li>
-              <li>
-                <img
-                  src="./images/star-filled.svg"
-                  alt=""
-                  loading="lazy"
-                  decoding="async"
-                  aria-hidden="true"
-                />
-              </li>
-              <li>
-                <img
-                  src="./images/star-filled.svg"
-                  alt=""
-                  loading="lazy"
-                  decoding="async"
-                  aria-hidden="true"
-                />
-              </li>
-              <li>
-                <img
-                  src="./images/star-filled.svg"
-                  alt=""
-                  loading="lazy"
-                  decoding="async"
-                  aria-hidden="true"
-                />
-              </li>
-              <li>
-                <img
-                  src="./images/star.svg"
-                  alt=""
-                  loading="lazy"
-                  decoding="async"
-                  aria-hidden="true"
-                />
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="review">
-          <img
-            src="./images/user-3.png"
-            alt="customer avatar"
-            class="review__person"
-            loading="lazy"
-            decoding="async"
-          />
-          <p class="review__text">
-            Slate helps you see how many more days you need to work to reach
-            your financial goal for the month and year.
-          </p>
-          <div class="review__stars">
-            <ul
-              class="review__stars-list"
-              role="img"
-              aria-label="4 out of 5 stars"
-            >
-              <li>
-                <img
-                  src="./images/star-filled.svg"
-                  alt=""
-                  loading="lazy"
-                  decoding="async"
-                  aria-hidden="true"
-                />
-              </li>
-              <li>
-                <img
-                  src="./images/star-filled.svg"
-                  alt=""
-                  loading="lazy"
-                  decoding="async"
-                  aria-hidden="true"
-                />
-              </li>
-              <li>
-                <img
-                  src="./images/star-filled.svg"
-                  alt=""
-                  loading="lazy"
-                  decoding="async"
-                  aria-hidden="true"
-                />
-              </li>
-              <li>
-                <img
-                  src="./images/star-filled.svg"
-                  alt=""
-                  loading="lazy"
-                  decoding="async"
-                  aria-hidden="true"
-                />
-              </li>
-              <li>
-                <img
-                  src="./images/star.svg"
-                  alt=""
-                  loading="lazy"
-                  decoding="async"
-                  aria-hidden="true"
-                />
-              </li>
-            </ul>
-          </div>
+    <section class="info">
+      <div class="info__about">
+        <h1 class="about__title">We Ensure A Best Insurance Service</h1>
+        <p>
+          We know how large objects will act, but things on a small scale just
+          do not act that way.
+        </p>
+        <div class="info__interaction">
+          <button class="info__button info__button--get-quote">
+            Get Quote Now
+          </button>
+          <button class="info__button info__button--learn-more">
+            Learn More
+          </button>
         </div>
       </div>
+      <ul class="info__advantages">
+        <li class="advantage">
+          <img src="./images/people-smaller.svg" alt="people-icon" loading="lazy" decoding="async" />
+          <h3 class="advantage__title">Peace of mind</h3>
+          <p class="advantage__text">the quick fox jumps over the lazy dog</p>
+        </li>
+        <li class="advantage">
+          <img src="./images/people-smaller.svg" alt="people-icon" loading="lazy" decoding="async" />
+          <h3 class="advantage__title">Set for life</h3>
+          <p class="advantage__text">the quick fox jumps over the lazy dog</p>
+        </li>
+        <li class="advantage advantage--blue">
+          <img src="./images/people-white-bg.svg" alt="people-icon" loading="lazy" decoding="async" />
+          <h3 class="advantage__title">100% Satisfaction</h3>
+          <p class="advantage__text">the quick fox jumps over the lazy dog</p>
+        </li>
+      </ul>
     </section>
-    <section class="newsletter" aria-labelledby="newsletter-subscription">
-      <div class="newsletter__inner">
-        <div class="newsletter__partners">
-          <ul class="newsletter__partners-list">
-            <li class="newsletter__partner">
-              <a href="#">
-                <img
-                  src="./images/hooli.svg"
-                  alt="hooli's company icon"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </a>
+  </div>
+
+  <article class="benefits" aria-label="list of benefits">
+    <ul class="benefits__inner">
+      <li class="benefit">
+        <img src="./images/book.svg" alt="" class="benefit__image" loading="lazy" />
+        <h3 class="benefit__title">Peace of Mind</h3>
+        <p class="benefit__text">
+          So it really behaves like neither. Now we have given up.
+        </p>
+      </li>
+      <li class="benefit">
+        <img src="./images/favourites.svg" alt="" class="benefit__image" loading="lazy" />
+        <h5 class="benefit__title">Set For Life</h5>
+        <p class="benefit__text">
+          They were used to create the machines that launched
+        </p>
+      </li>
+      <li class="benefit">
+        <img src="./images/people-bigger.svg" alt="" class="benefit__image" loading="lazy" />
+        <h5 class="benefit__title">100% Satisfaction</h5>
+        <p class="benefit__text">
+          So it really behaves like neither. Now we have given up.
+        </p>
+      </li>
+    </ul>
+  </article>
+  <section class="reviews" aria-labelledby="reviews">
+    <header class="reviews__header">
+      <h2 class="reviews__title visually-hidden" id="reviews">Industry</h2>
+      <p>
+        Problems trying to resolve the conflict between the two major realms
+        of Classical physics: Newtonian mechanics
+      </p>
+    </header>
+
+    <div class="reviews__inner">
+      <div class="review">
+        <img src="./images/user-1.png" alt="customer avatar" class="review__person" loading="lazy" decoding="async" />
+        <p class="review__text">
+          Slate helps you see how many more days you need to work to reach
+          your financial goal for the month and year.
+        </p>
+        <div class="review__stars">
+          <ul class="review__stars-list" role="img" aria-label="4 out of 5 stars">
+            <li>
+              <img src="./images/star-filled.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" />
             </li>
-            <li class="newsletter__partner">
-              <a href="#">
-                <img
-                  src="./images/lyft.svg"
-                  alt="lyft's company icon"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </a>
+            <li>
+              <img src="./images/star-filled.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" />
             </li>
-            <li class="newsletter__partner">
-              <a href="#">
-                <img
-                  src="./images/leaflet.svg"
-                  alt="leaflet's company icon"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </a>
+            <li>
+              <img src="./images/star-filled.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" />
             </li>
-            <li class="newsletter__partner">
-              <a href="#">
-                <img
-                  src="./images/stripe.svg"
-                  alt="stripe's company icon"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </a>
+            <li>
+              <img src="./images/star-filled.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" />
             </li>
-            <li class="newsletter__partner">
-              <a href="#">
-                <img
-                  src="./images/aws.svg"
-                  alt="aws's company icon"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </a>
-            </li>
-            <li class="newsletter__partner">
-              <a href="#">
-                <img
-                  src="./images/reddit.svg"
-                  alt="reddit's company icon"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </a>
+            <li>
+              <img src="./images/star.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" />
             </li>
           </ul>
         </div>
-        <form
-          action="https://example.com"
-          method="post"
-          class="newsletter__form"
-        >
-          <h3 class="newsletter__form-title" id="newsletter-subscription">
-            Subscribe For Latest Newsletter
-          </h3>
-          <div class="newsletter__form-data">
-            <label
-              for="email"
-              class="newsletter__form-label"
-              aria-label="Email address"
-            >
-              <input
-                type="email"
-                id="email"
-                autocomplete="email"
-                class="newsletter__form-input"
-                placeholder="Your email"
-                name="email"
-                required
-              />
-            </label>
-            <button class="newsletter__form-button" type="submit">
-              Subscribe
-            </button>
-          </div>
-        </form>
       </div>
-    </section>
-    <section class="pricing" aria-labelledby="pricing">
-      <div class="pricing__inner">
-        <h2 class="pricing__title" id="pricing">Pricing</h2>
-        <p class="pricing__text">
-          Problems trying to resolve the conflict between the two major realms
-          of Classical physics: Newtonian mechanics
+      <div class="review">
+        <img src="./images/user-2.png" alt="customer avatar" class="review__person" loading="lazy" decoding="async" />
+        <p class="review__text">
+          Slate helps you see how many more days you need to work to reach
+          your financial goal for the month and year.
         </p>
-        <div class="pricing__cards">
-          <div class="card" aria-label="Free plan">
-            <h3 class="card__title">FREE</h3>
-            <p class="card__text">Organize across all apps by hand</p>
-            <div class="card__price">
-              <p class="card__value" aria-label="0 $ per month">0</p>
-              <div class="card__price-info">
-                <sup class="card__currency" aria-hidden="true">$</sup>
-                <p class="card__duration">Per month</p>
-              </div>
-            </div>
-            <div class="card__benefits">
-              <ul class="card__benefits-list">
-                <li class="card__benefit" aria-label="3 of 5 benefits">
-                  <img
-                    src="./images/green-circle.svg"
-                    alt=""
-                    loading="lazy"
-                    decoding="async"
-                    aria-hidden="true"
-                  />
-                  <p>Unlimited product updates</p>
-                </li>
-                <li class="card__benefit">
-                  <img
-                    src="./images/green-circle.svg"
-                    alt=""
-                    loading="lazy"
-                    decoding="async"
-                    aria-hidden="true"
-                  />
-                  <p>Unlimited product updates</p>
-                </li>
-                <li class="card__benefit">
-                  <img
-                    src="./images/green-circle.svg"
-                    alt=""
-                    loading="lazy"
-                    decoding="async"
-                    aria-hidden="true"
-                  />
-                  <p>Unlimited product updates</p>
-                </li>
-                <li class="card__benefit">
-                  <img
-                    src="./images/grey-circle.svg"
-                    alt=""
-                    loading="lazy"
-                    decoding="async"
-                    aria-hidden="true"
-                  />
-                  <p>1GB Cloud Storage</p>
-                </li>
-                <li class="card__benefit">
-                  <img
-                    src="./images/grey-circle.svg"
-                    alt=""
-                    loading="lazy"
-                    decoding="async"
-                    aria-hidden="true"
-                  />
-                  <p>Email and community support</p>
-                </li>
-              </ul>
-            </div>
-            <button class="card__button" type="button">Try for free</button>
-          </div>
-          <div class="card" aria-label="Standard plan">
-            <h3 class="card__title">STANDARD</h3>
-            <p class="card__text">Organize across all apps by hand</p>
-            <div class="card__price">
-              <p class="card__value" aria-label="9.99 $ per month">9.99</p>
-              <div class="card__price-info">
-                <sup class="card__currency" aria-hidden="true">$</sup>
-                <p class="card__duration">Per month</p>
-              </div>
-            </div>
-            <div class="card__benefits">
-              <ul class="card__benefits-list">
-                <li class="card__benefit" aria-label="3 of 5 benefits">
-                  <img
-                    src="./images/green-circle.svg"
-                    alt=""
-                    loading="lazy"
-                    decoding="async"
-                    aria-hidden="true"
-                  />
-                  <p>Unlimited product updates</p>
-                </li>
-                <li class="card__benefit">
-                  <img
-                    src="./images/green-circle.svg"
-                    alt=""
-                    loading="lazy"
-                    decoding="async"
-                    aria-hidden="true"
-                  />
-                  <p>Unlimited product updates</p>
-                </li>
-                <li class="card__benefit">
-                  <img
-                    src="./images/green-circle.svg"
-                    alt=""
-                    loading="lazy"
-                    decoding="async"
-                    aria-hidden="true"
-                  />
-                  <p>Unlimited product updates</p>
-                </li>
-                <li class="card__benefit">
-                  <img
-                    src="./images/grey-circle.svg"
-                    alt=""
-                    loading="lazy"
-                    decoding="async"
-                    aria-hidden="true"
-                  />
-                  <p>1GB Cloud Storage</p>
-                </li>
-                <li class="card__benefit">
-                  <img
-                    src="./images/grey-circle.svg"
-                    alt=""
-                    loading="lazy"
-                    decoding="async"
-                    aria-hidden="true"
-                  />
-                  <p>Email and community support</p>
-                </li>
-              </ul>
-            </div>
-            <button class="card__button" type="button">Try for free</button>
-          </div>
-          <div class="card" aria-label="Premium plan">
-            <h3 class="card__title">PREMIUM</h3>
-            <p class="card__text">Organize across all apps by hand</p>
-            <div class="card__price">
-              <p class="card__value" aria-label="19.99 $ per month">19.99</p>
-              <div class="card__price-info">
-                <sup class="card__currency" aria-hidden="true">$</sup>
-                <p class="card__duration">Per month</p>
-              </div>
-            </div>
-            <div class="card__benefits">
-              <ul class="card__benefits-list">
-                <li class="card__benefit" aria-label="3 of 5 benefits">
-                  <img
-                    src="./images/green-circle.svg"
-                    alt=""
-                    loading="lazy"
-                    decoding="async"
-                    aria-hidden="true"
-                  />
-                  <p>Unlimited product updates</p>
-                </li>
-                <li class="card__benefit">
-                  <img
-                    src="./images/green-circle.svg"
-                    alt=""
-                    loading="lazy"
-                    decoding="async"
-                    aria-hidden="true"
-                  />
-                  <p>Unlimited product updates</p>
-                </li>
-                <li class="card__benefit">
-                  <img
-                    src="./images/green-circle.svg"
-                    alt=""
-                    loading="lazy"
-                    decoding="async"
-                    aria-hidden="true"
-                  />
-                  <p>Unlimited product updates</p>
-                </li>
-                <li class="card__benefit">
-                  <img
-                    src="./images/grey-circle.svg"
-                    alt=""
-                    loading="lazy"
-                    decoding="async"
-                    aria-hidden="true"
-                  />
-                  <p>1GB Cloud Storage</p>
-                </li>
-                <li class="card__benefit">
-                  <img
-                    src="./images/grey-circle.svg"
-                    alt=""
-                    loading="lazy"
-                    decoding="async"
-                    aria-hidden="true"
-                  />
-                  <p>Email and community support</p>
-                </li>
-              </ul>
-            </div>
-            <button class="card__button" type="button">Try for free</button>
-          </div>
+        <div class="review__stars">
+          <ul class="review__stars-list" role="img" aria-label="4 out of 5 stars">
+            <li>
+              <img src="./images/star-filled.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" />
+            </li>
+            <li>
+              <img src="./images/star-filled.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" />
+            </li>
+            <li>
+              <img src="./images/star-filled.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" />
+            </li>
+            <li>
+              <img src="./images/star-filled.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" />
+            </li>
+            <li>
+              <img src="./images/star.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" />
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
-
-    <section class="booking" aria-labelledby="booking__title">
-      <div class="booking__inner">
-        <div class="booking__info">
-          <div class="booking__text">
-            <h2 class="booking__title" id="booking__title">
-              We Have Branches All Over The World
-            </h2>
-            <p>
-              The gradual accumulation of information about atomic and
-              small-scale behaviour during the first quarter of the 20th
-              century, which gave some indications about how small things do
-              behave, produced an increasing confusion which was Heisenberg, and
-              Born.
-            </p>
-          </div>
-          <picture>
-            <source srcset="./images/world.webp" type="image/webp" />
-            <img
-              src="./images/world.png"
-              alt="Branches all over the world"
-              loading="lazy"
-              decoding="async"
-              class="booking__world-image"
-            />
-          </picture>
+      <div class="review">
+        <img src="./images/user-3.png" alt="customer avatar" class="review__person" loading="lazy" decoding="async" />
+        <p class="review__text">
+          Slate helps you see how many more days you need to work to reach
+          your financial goal for the month and year.
+        </p>
+        <div class="review__stars">
+          <ul class="review__stars-list" role="img" aria-label="4 out of 5 stars">
+            <li>
+              <img src="./images/star-filled.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" />
+            </li>
+            <li>
+              <img src="./images/star-filled.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" />
+            </li>
+            <li>
+              <img src="./images/star-filled.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" />
+            </li>
+            <li>
+              <img src="./images/star-filled.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" />
+            </li>
+            <li>
+              <img src="./images/star.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" />
+            </li>
+          </ul>
         </div>
-        <div class="booking__contact">
-          <div class="booking__family-image" aria-hidden="true"></div>
-          <form
-            action="https://example.com"
-            method="post"
-            class="booking__form"
-            aria-labelledby="appointment"
-          >
-            <h3 class="booking__form-title" id="appointment">
-              Book Appointment
-            </h3>
-            <div class="booking__form-data">
-              <label for="name" class="booking__form-label">Name *</label>
-              <input
-                type="text"
-                placeholder="Full Name *"
-                name="name"
-                id="name"
-                maxlength="25"
-                pattern="[\p{L}\s]+"
-                title="Username should be without numbers or spaces"
-                required
-                class="booking__form-input"
-                aria-describedby="name"
-              />
-              <span id="name" hidden
-                >Username should be without numbers or spaces</span
-              >
-            </div>
-            <div class="booking__form-data">
-              <label for="email" class="booking__form-label"
-                >Email address *</label
-              >
-              <input
-                type="email"
-                placeholder="example@gmail.com"
-                name="email"
-                id="email"
-                maxlength="100"
-                required
-                class="booking__form-input"
-                aria-describedby="email"
-              />
-              <span id="email" hidden>Enter your email address</span>
-            </div>
-            <div class="booking__form-data">
-              <label for="department" class="booking__form-label"
-                >Department *</label
-              >
-              <select name="department" id="department" required>
-                <option value="" disabled selected>Please Select</option>
-                <option value="Medicine">Medicine</option>
-                <option value="Education">Education</option>
-              </select>
-            </div>
-            <div class="booking__form-data">
-              <label for="time" class="booking__form-label">Time *</label>
-              <select name="time" id="time" required>
-                <option value="" disabled selected>4:00 Available</option>
-                <option value="6:00">6:00</option>
-              </select>
-            </div>
-            <button
-              class="booking__form-submit-button"
-              type="submit"
-              aria-label="Submit form"
-              name="submitFormButton"
-              value="sendInfo"
-            >
-              Book Appointment
-            </button>
-          </form>
-        </div>
-      </div>
-    </section>
-    
-    <div class="consult" aria-labelledby="title">
-      <div class="consult__inner">
-        <div class="consult__info">
-          <h2 class="consult__title" id="title">
-            Consulting Agency For Your Business
-          </h2>
-          <p class="consult__text">the quick fox jumps over the lazy dog</p>
-        </div>
-        <button class="consult__button" type="button">Contact us</button>
       </div>
     </div>
-
-    <footer class="footer">
-      <div class="footer__inner">
-        <ul class="footer__company-description">
-          <li class="footer__col">
-            <h3 class="footer__col-title">Company info</h3>
-            <ul class="footer__about">
-              <li>
-                <a href="#" class="footer__link">About us</a>
-              </li>
-              <li>
-                <a href="#" class="footer__link">Carrier</a>
-              </li>
-              <li>
-                <a href="#" class="footer__link">We are hiring</a>
-              </li>
-              <li>
-                <a href="#" class="footer__link">Blog</a>
-              </li>
-            </ul>
+  </section>
+  <section class="newsletter" aria-labelledby="newsletter-subscription">
+    <div class="newsletter__inner">
+      <div class="newsletter__partners">
+        <ul class="newsletter__partners-list">
+          <li class="newsletter__partner">
+            <a href="#">
+              <img src="./images/hooli.svg" alt="hooli's company icon" loading="lazy" decoding="async" />
+            </a>
           </li>
-          <li class="footer__col">
-            <h3 class="footer__col-title">Legal</h3>
-            <ul class="footer__about">
-              <li>
-                <a href="#" class="footer__link">About us</a>
-              </li>
-              <li>
-                <a href="#" class="footer__link">Carrier</a>
-              </li>
-              <li>
-                <a href="#" class="footer__link">We are hiring</a>
-              </li>
-              <li>
-                <a href="#" class="footer__link">Blog</a>
-              </li>
-            </ul>
+          <li class="newsletter__partner">
+            <a href="#">
+              <img src="./images/lyft.svg" alt="lyft's company icon" loading="lazy" decoding="async" />
+            </a>
           </li>
-          <li class="footer__col">
-            <h3 class="footer__col-title">Features</h3>
-            <ul class="footer__about">
-              <li>
-                <a href="#" class="footer__link">Business Marketing</a>
-              </li>
-              <li>
-                <a href="#" class="footer__link">User Analytic</a>
-              </li>
-              <li>
-                <a href="#" class="footer__link">Live Chat</a>
-              </li>
-              <li>
-                <a href="#" class="footer__link">Unlimited Support</a>
-              </li>
-            </ul>
+          <li class="newsletter__partner">
+            <a href="#">
+              <img src="./images/leaflet.svg" alt="leaflet's company icon" loading="lazy" decoding="async" />
+            </a>
           </li>
-          <li class="footer__col">
-            <h3 class="footer__col-title">Resources</h3>
-            <ul class="footer__about">
-              <li>
-                <a href="#" class="footer__link">IOS & Android</a>
-              </li>
-              <li>
-                <a href="#" class="footer__link">Watch a Demo</a>
-              </li>
-              <li>
-                <a href="#" class="footer__link">Customers</a>
-              </li>
-              <li>
-                <a href="#" class="footer__link">API</a>
-              </li>
-            </ul>
+          <li class="newsletter__partner">
+            <a href="#">
+              <img src="./images/stripe.svg" alt="stripe's company icon" loading="lazy" decoding="async" />
+            </a>
           </li>
-          <li class="footer__col">
-            <h3 class="footer__col-title">Get In Touch</h3>
-            <ul class="footer__about" aria-label="get in touch with us">
-              <li class="footer__about-el footer__about-el--flex">
-                <img
-                  src="./images/phone.svg"
-                  alt=""
-                  aria-hidden="true"
-                  loading="lazy"
-                  decoding="async"
-                />
-                <a href="tel:+14805550103" class="footer__link"
-                  >(480) 555-0103</a
-                >
-              </li>
-              <li class="footer__about-el footer__about-el--flex">
-                <img
-                  src="./images/position.svg"
-                  alt=""
-                  aria-hidden="true"
-                  loading="lazy"
-                  decoding="async"
-                />
-                <a
-                  href="https://maps.google.com/?q=4517+Washington+Ave."
-                  class="footer__link"
-                  >4517 Washington Ave.</a
-                >
-              </li>
-              <li class="footer__about-el footer__about-el--flex">
-                <img
-                  src="./images/email.svg"
-                  alt=""
-                  aria-hidden="true"
-                  loading="lazy"
-                  decoding="async"
-                />
-                <a href="mailto:debra.holt@example.com" class="footer__link"
-                  >debra.holt@example.com</a
-                >
-              </li>
-            </ul>
+          <li class="newsletter__partner">
+            <a href="#">
+              <img src="./images/aws.svg" alt="aws's company icon" loading="lazy" decoding="async" />
+            </a>
+          </li>
+          <li class="newsletter__partner">
+            <a href="#">
+              <img src="./images/reddit.svg" alt="reddit's company icon" loading="lazy" decoding="async" />
+            </a>
           </li>
         </ul>
       </div>
-      <div class="footer__rights">
-        <div class="footer__rights-inner">
-          <p class="footer__rights-text">
-            Made With Love By Figmaland All Right Reserved
-          </p>
-          <div class="footer__socials">
-            <ul class="footer__socials-list">
-              <li>
-                <a href="#" class="footer__link"
-                  ><img
-                    src="./images/facebook.svg"
-                    alt="facebook link"
-                    loading="lazy"
-                    decoding="async"
-                /></a>
+      <form action="https://example.com" method="post" class="newsletter__form">
+        <h3 class="newsletter__form-title" id="newsletter-subscription">
+          Subscribe For Latest Newsletter
+        </h3>
+        <div class="newsletter__form-data">
+          <label for="email" class="newsletter__form-label" aria-label="Email address">
+            <input type="email" id="email" autocomplete="email" class="newsletter__form-input" placeholder="Your email"
+              name="email" required />
+          </label>
+          <button class="newsletter__form-button" type="submit">
+            Subscribe
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <section class="pricing" aria-labelledby="pricing">
+    <div class="pricing__inner">
+      <h2 class="pricing__title" id="pricing">Pricing</h2>
+      <p class="pricing__text">
+        Problems trying to resolve the conflict between the two major realms
+        of Classical physics: Newtonian mechanics
+      </p>
+      <div class="pricing__cards">
+        <div class="card" aria-label="Free plan">
+          <h3 class="card__title">FREE</h3>
+          <p class="card__text">Organize across all apps by hand</p>
+          <div class="card__price">
+            <p class="card__value" aria-label="0 $ per month">0</p>
+            <div class="card__price-info">
+              <sup class="card__currency" aria-hidden="true">$</sup>
+              <p class="card__duration">Per month</p>
+            </div>
+          </div>
+          <div class="card__benefits">
+            <ul class="card__benefits-list">
+              <li class="card__benefit" aria-label="3 of 5 benefits">
+                <img src="./images/green-circle.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" />
+                <p>Unlimited product updates</p>
               </li>
-              <li>
-                <a href="#" class="footer__link"
-                  ><img
-                    src="./images/inst.svg"
-                    alt="instagram link"
-                    loading="lazy"
-                    decoding="async"
-                /></a>
+              <li class="card__benefit">
+                <img src="./images/green-circle.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" />
+                <p>Unlimited product updates</p>
               </li>
-              <li>
-                <a href="#" class="footer__link"
-                  ><img
-                    src="./images/twitter.svg"
-                    alt="twitter link"
-                    loading="lazy"
-                    decoding="async"
-                /></a>
+              <li class="card__benefit">
+                <img src="./images/green-circle.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" />
+                <p>Unlimited product updates</p>
+              </li>
+              <li class="card__benefit">
+                <img src="./images/grey-circle.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" />
+                <p>1GB Cloud Storage</p>
+              </li>
+              <li class="card__benefit">
+                <img src="./images/grey-circle.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" />
+                <p>Email and community support</p>
               </li>
             </ul>
           </div>
+          <button class="card__button" type="button">Try for free</button>
+        </div>
+        <div class="card" aria-label="Standard plan">
+          <h3 class="card__title">STANDARD</h3>
+          <p class="card__text">Organize across all apps by hand</p>
+          <div class="card__price">
+            <p class="card__value" aria-label="9.99 $ per month">9.99</p>
+            <div class="card__price-info">
+              <sup class="card__currency" aria-hidden="true">$</sup>
+              <p class="card__duration">Per month</p>
+            </div>
+          </div>
+          <div class="card__benefits">
+            <ul class="card__benefits-list">
+              <li class="card__benefit" aria-label="3 of 5 benefits">
+                <img src="./images/green-circle.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" />
+                <p>Unlimited product updates</p>
+              </li>
+              <li class="card__benefit">
+                <img src="./images/green-circle.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" />
+                <p>Unlimited product updates</p>
+              </li>
+              <li class="card__benefit">
+                <img src="./images/green-circle.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" />
+                <p>Unlimited product updates</p>
+              </li>
+              <li class="card__benefit">
+                <img src="./images/grey-circle.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" />
+                <p>1GB Cloud Storage</p>
+              </li>
+              <li class="card__benefit">
+                <img src="./images/grey-circle.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" />
+                <p>Email and community support</p>
+              </li>
+            </ul>
+          </div>
+          <button class="card__button" type="button">Try for free</button>
+        </div>
+        <div class="card" aria-label="Premium plan">
+          <h3 class="card__title">PREMIUM</h3>
+          <p class="card__text">Organize across all apps by hand</p>
+          <div class="card__price">
+            <p class="card__value" aria-label="19.99 $ per month">19.99</p>
+            <div class="card__price-info">
+              <sup class="card__currency" aria-hidden="true">$</sup>
+              <p class="card__duration">Per month</p>
+            </div>
+          </div>
+          <div class="card__benefits">
+            <ul class="card__benefits-list">
+              <li class="card__benefit" aria-label="3 of 5 benefits">
+                <img src="./images/green-circle.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" />
+                <p>Unlimited product updates</p>
+              </li>
+              <li class="card__benefit">
+                <img src="./images/green-circle.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" />
+                <p>Unlimited product updates</p>
+              </li>
+              <li class="card__benefit">
+                <img src="./images/green-circle.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" />
+                <p>Unlimited product updates</p>
+              </li>
+              <li class="card__benefit">
+                <img src="./images/grey-circle.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" />
+                <p>1GB Cloud Storage</p>
+              </li>
+              <li class="card__benefit">
+                <img src="./images/grey-circle.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" />
+                <p>Email and community support</p>
+              </li>
+            </ul>
+          </div>
+          <button class="card__button" type="button">Try for free</button>
         </div>
       </div>
-    </footer>
-  </body>
+    </div>
+  </section>
+
+  <section class="booking" aria-labelledby="booking__title">
+    <div class="booking__inner">
+      <div class="booking__info">
+        <div class="booking__text">
+          <h2 class="booking__title" id="booking__title">
+            We Have Branches All Over The World
+          </h2>
+          <p>
+            The gradual accumulation of information about atomic and
+            small-scale behaviour during the first quarter of the 20th
+            century, which gave some indications about how small things do
+            behave, produced an increasing confusion which was Heisenberg, and
+            Born.
+          </p>
+        </div>
+        <picture>
+          <source srcset="./images/world.webp" type="image/webp" />
+          <img src="./images/world.png" alt="Branches all over the world" loading="lazy" decoding="async"
+            class="booking__world-image" />
+        </picture>
+      </div>
+      <div class="booking__contact">
+        <div class="booking__family-image" aria-hidden="true"></div>
+        <form action="https://example.com" method="post" class="booking__form" aria-labelledby="appointment">
+          <h3 class="booking__form-title" id="appointment">
+            Book Appointment
+          </h3>
+          <div class="booking__form-data">
+            <label for="name" class="booking__form-label">Name *</label>
+            <input type="text" placeholder="Full Name *" name="name" id="name" maxlength="25" pattern="[\p{L}\s]+"
+              title="Username should be without numbers or spaces" required class="booking__form-input"
+              aria-describedby="name" />
+            <span id="name" hidden>Username should be without numbers or spaces</span>
+          </div>
+          <div class="booking__form-data">
+            <label for="email" class="booking__form-label">Email address *</label>
+            <input type="email" placeholder="example@gmail.com" name="email" id="email" maxlength="100" required
+              class="booking__form-input" aria-describedby="email" />
+            <span id="email" hidden>Enter your email address</span>
+          </div>
+          <div class="booking__form-data">
+            <label for="department" class="booking__form-label">Department *</label>
+            <select name="department" id="department" required>
+              <option value="" disabled selected>Please Select</option>
+              <option value="Medicine">Medicine</option>
+              <option value="Education">Education</option>
+            </select>
+          </div>
+          <div class="booking__form-data">
+            <label for="time" class="booking__form-label">Time *</label>
+            <select name="time" id="time" required>
+              <option value="" disabled selected>4:00 Available</option>
+              <option value="6:00">6:00</option>
+            </select>
+          </div>
+          <button class="booking__form-submit-button" type="submit" aria-label="Submit form" name="submitFormButton"
+            value="sendInfo">
+            Book Appointment
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div class="consult" aria-labelledby="title">
+    <div class="consult__inner">
+      <div class="consult__info">
+        <h2 class="consult__title" id="title">
+          Consulting Agency For Your Business
+        </h2>
+        <p class="consult__text">the quick fox jumps over the lazy dog</p>
+      </div>
+      <button class="consult__button" type="button">Contact us</button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <ul class="footer__company-description">
+        <li class="footer__col">
+          <h3 class="footer__col-title">Company info</h3>
+          <ul class="footer__about">
+            <li>
+              <a href="#" class="footer__link">About us</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Carrier</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">We are hiring</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Blog</a>
+            </li>
+          </ul>
+        </li>
+        <li class="footer__col">
+          <h3 class="footer__col-title">Legal</h3>
+          <ul class="footer__about">
+            <li>
+              <a href="#" class="footer__link">About us</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Carrier</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">We are hiring</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Blog</a>
+            </li>
+          </ul>
+        </li>
+        <li class="footer__col">
+          <h3 class="footer__col-title">Features</h3>
+          <ul class="footer__about">
+            <li>
+              <a href="#" class="footer__link">Business Marketing</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">User Analytic</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Live Chat</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Unlimited Support</a>
+            </li>
+          </ul>
+        </li>
+        <li class="footer__col">
+          <h3 class="footer__col-title">Resources</h3>
+          <ul class="footer__about">
+            <li>
+              <a href="#" class="footer__link">IOS & Android</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Watch a Demo</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Customers</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">API</a>
+            </li>
+          </ul>
+        </li>
+        <li class="footer__col">
+          <h3 class="footer__col-title">Get In Touch</h3>
+          <ul class="footer__about" aria-label="get in touch with us">
+            <li class="footer__about-el footer__about-el--flex">
+              <img src="./images/phone.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" />
+              <a href="tel:+14805550103" class="footer__link">(480) 555-0103</a>
+            </li>
+            <li class="footer__about-el footer__about-el--flex">
+              <img src="./images/position.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" />
+              <a href="https://maps.google.com/?q=4517+Washington+Ave." class="footer__link">4517 Washington Ave.</a>
+            </li>
+            <li class="footer__about-el footer__about-el--flex">
+              <img src="./images/email.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" />
+              <a href="mailto:debra.holt@example.com" class="footer__link">debra.holt@example.com</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__rights">
+      <div class="footer__rights-inner">
+        <p class="footer__rights-text">
+          Made With Love By Figmaland All Right Reserved
+        </p>
+        <div class="footer__socials">
+          <ul class="footer__socials-list">
+            <li>
+              <a href="#" class="footer__link"><img src="./images/facebook.svg" alt="facebook link" loading="lazy"
+                  decoding="async" /></a>
+            </li>
+            <li>
+              <a href="#" class="footer__link"><img src="./images/inst.svg" alt="instagram link" loading="lazy"
+                  decoding="async" /></a>
+            </li>
+            <li>
+              <a href="#" class="footer__link"><img src="./images/twitter.svg" alt="twitter link" loading="lazy"
+                  decoding="async" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>

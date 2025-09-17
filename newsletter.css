@@ -1,13 +1,14 @@
 .newsletter {
   width: 100%;
-  max-width: 1440px;
+  max-width: var(--max-width-main);
   margin: 0 auto;
   font-family: "Montserrat";
+  background-color: #FAFAFA;
 }
 
 .newsletter__inner {
   width: 100%;
-  max-width: 1050px;
+  max-width: var(--max-width-inner);
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -29,7 +30,6 @@
 
 .newsletter__partner:hover img {
   filter: grayscale(1);
-  /* Ничего не меняет? */
 }
 
 .newsletter__partner img {
@@ -54,8 +54,8 @@
 }
 
 .newsletter__form-title {
-  font-size: 24px;
-  color: white;
+  font-size: 1.5rem;
+  color: var(--color-white);
   font-weight: bold;
 }
 
@@ -69,7 +69,7 @@
 }
 
 .newsletter__form-label {
-  background-color: white;
+  background-color: var(--bg-white);
   display: flex;
   justify-content: space-between;
   height: 58px;
@@ -81,10 +81,10 @@
 }
 
 .newsletter__form-button {
-  background-color: #23a6f0;
+  background-color: var(--accent-color);
   border: 1px solid #e6e6e6;
   border-left: none;
-  color: white;
+  color: var(--color-white);
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
   height: 58px;
@@ -100,7 +100,7 @@
 
 .newsletter__form:focus-within,
 .newsletter__form-button:focus-visible {
-  outline: 2px solid #23a6f0;
+  outline: 2px solid var(--accent-color);
   outline-offset: 3px;
   border-radius: 4px;
 }

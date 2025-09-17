@@ -1,7 +1,7 @@
 .reviews {
   background-color: #fafafa;
   width: 100%;
-  max-width: 1440px;
+  max-width: var(--max-width-main);
   margin: 0 auto 100px auto;
   font-family: "Montserrat";
   text-align: center;
@@ -9,24 +9,26 @@
 }
 
 .reviews__header {
-  padding: 0 clamp(0px, 50%, 416px);
-  margin-bottom: 80px;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto 80px auto;
 }
 
 .reviews__header > h2 {
-  font-size: 40px;
+  font-size: 2.5rem;
   margin-bottom: 10px;
 }
 
 .reviews__header > p {
-  font-size: 14px;
-  color: #737373;
+  font-size: 0.875rem;
+  color: var(--p-secondary);
   margin: 0;
+  line-height: 20px;
 }
 
 .reviews__inner {
   width: 100%;
-  max-width: 1050px;
+  max-width: var(--max-width-inner);
   margin: 0 auto;
   display: grid;
   grid-template-rows: 1fr;
@@ -41,7 +43,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: white;
+  background-color: var(--bg-white);
 }
 
 .review__stars-list {
@@ -61,9 +63,9 @@
 
 .review__text {
   text-align: center;
-  font-size: 14px;
+  font-size: 0.875rem;
   letter-spacing: 0.2px;
-  color: #737373;
+  color: var(--p-secondary);
   margin: 30px 0 15px 0;
   letter-spacing: 0.2px;
   line-height: 20px;
@@ -75,7 +77,7 @@
   }
 
   .reviews__header > h2 {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 }
 

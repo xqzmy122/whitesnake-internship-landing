@@ -1,0 +1,29 @@
+body {
+  background-color: #fafafa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --accent-color: #23a6f0;
+  --color-white: white;
+  --hovered-btn-brightness: 1.1;
+  --max-width-main: 1440px;
+  --max-width-inner: 1050px;
+  --p-secondary: #737373;
+  --bg-white: white;
+  --border-radius-main: 5px;
+  --border-radius-sm: 4px;
+  --bg-main: #f9f9f9;
+  --color-secondary: #e5e5e5;
+}
+
+@media (min-width: 1440px) {
+  html {
+    font-size: 18px;
+  }
+}

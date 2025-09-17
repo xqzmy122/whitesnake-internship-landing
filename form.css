@@ -1,24 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-:root {
-  --border-radius-main: 5px;
-  --accent-color: #23a6f0;
-  --border-radius-sm: 4px;
-  --bg-main: #f9f9f9;
-  --color-secondary: #e5e5e5;
-  --hovered: 1.1;
-  --color-white: white;
-}
-
 .booking {
   width: 100%;
-  max-width: 1440px;
+  max-width: var(--max-width-main);
   margin: 0 auto;
-  background: linear-gradient(180deg, #252b42 65%, #ffffff 65%);
+  background: linear-gradient(180deg, #252b42 65%, #fafafa 65%);
   color: var(--color-white);
 }
 
@@ -26,7 +10,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 1050px;
+  max-width: var(--max-width-inner);
   margin: 0 auto;
 }
 
@@ -36,12 +20,17 @@
   gap: 30px;
 }
 
-.booking__info > img {
-  object-fit: contain;
+.booking__info > picture {
   width: 100%;
   height: 100%;
   max-height: 170px;
-  max-width: 415px;
+  max-width: 470px;
+}
+
+.booking__info  img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
 
 .booking__text {
@@ -49,17 +38,18 @@
 }
 
 .booking__text > h2 {
-  font-size: 40px;
+  font-size: 2.5rem;
   margin-bottom: 15px;
 }
 
 .booking__text > p {
-  font-size: 14px;
+  font-size: 1rem;
+  line-height: 20px;
 }
 
 .booking__contact {
   display: flex;
-  background-color: var(--color-white);
+  background-color: var(--bg-white);
   width: 100%;
   max-width: 885px;
   margin: 0 auto;
@@ -92,14 +82,14 @@
 .booking__form-title {
   text-align: center;
   margin-bottom: 40px;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .booking__form-data {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 600;
 }
 
@@ -108,7 +98,7 @@
   padding: 11px 18px;
   border-radius: var(--border-radius-main);
   background-color: var(--bg-main);
-  color: #737373;
+  color: var(--p-secondary);
 }
 
 .booking__form-input {
@@ -139,12 +129,12 @@
   border: none;
   border-radius: var(--border-radius-main);
   margin-top: 30px;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .booking__form-submit-button:hover {
   cursor: pointer;
-  filter: brightness(var(--hovered));
+  filter: brightness(var(--hovered-btn-brightness));
 }
 
 @media (max-width: 1000px) {
